@@ -1,7 +1,7 @@
 /**
  * @name RemoveDownloadWarning
  * @version 1.0
- * @description RemoveDownloadWarning
+ * @description Removes annoying message when trying to download a file
  * @author Eject
  *  
  */
