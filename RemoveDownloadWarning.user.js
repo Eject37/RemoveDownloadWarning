@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        RemoveDownloadWarning
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description Removes annoying message when trying to download a file
 // @author       Eject
 // @match        *://discord.com/*
@@ -18,6 +18,10 @@ setInterval(function () {
 					})
 					x.rel += ' removed'
 				})
-				document.querySelectorAll('.backdrop-2ByYRN.withLayer-2VVmpp, .layer-fP3xEz').forEach(x => x.remove())
+				document.querySelectorAll('.layer-fP3xEz').forEach(x => {
+					if (x.querySelector(".art-3yfHpl") !== null) {
+						document.querySelector('.backdrop-2ByYRN.withLayer-2VVmpp').click()
+					}
+				})
 			} catch { }
 		}, 1000)
