@@ -1,6 +1,6 @@
 /**
  * @name RemoveDownloadWarning
- * @version 1.2
+ * @version 1.3
  * @description Removes annoying message when trying to download a file
  * @author Eject
  *  
@@ -26,7 +26,7 @@ module.exports = class Example {
 					}
 				})
 			} catch { }
-		}, 1000)
+		}, 200)
 
 	}
 	stop() { }

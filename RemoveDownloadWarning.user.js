@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        RemoveDownloadWarning
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description Removes annoying message when trying to download a file
 // @author       Eject
 // @match        *://discord.com/*
@@ -24,4 +24,4 @@ setInterval(function () {
 					}
 				})
 			} catch { }
-		}, 1000)
+		}, 200)
